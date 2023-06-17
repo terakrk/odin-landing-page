@@ -3,12 +3,24 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,100&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css" />
 	<title>Hero Landing Page</title>
 	</head>
 	<body>
 		<header>
+			<div class="left">
+				<hgroup>
+			<p class="header-logo">Header Logo</p>
+			
+			<h1>This website is awesome</h1>
+			</hgroup>
+			<p class="subtitle gray-text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+			<button class="sign-up" type="submit">Sign up</button>
+			</div>
+			<div class="right">
 			<nav class="navbar">
 				<ul>
 					<li class="gray-text">header link one</li>
@@ -16,27 +28,33 @@
 					<li class="gray-text">header link three</li>
 				</ul>
 			</nav>
-			<h1>This website is awesome</h1>
-			<p class="subtitle gray-text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-			<img src="" alt="This is a placeholder for an image" />
-			<button class="sign-up" type="submit">Sign up</button>
+			<img src="./images/cat.png" alt="A cartoon cat" />
+			</div>
 		</header>
 		<main>
 			<h2>Some random information.</h2>
-			<img src="" />
-			<img src="" />
-			<img src="" />
-			<p class="subtitle">this is some subtext under an illustration or image</p>
-			<p class="subtitle">This is some subtext under an illustration or image</p>
-			<p class="subtitle">This is some subtext under an illustration or image</p>
-			<figure>
+			<div class="image-container">
+			 <div class="images">
+			<img src="./images/spider.jpg" />
+			<p class="subtitle">A spider.</p>
+			</div>
+			<div class="images">
+			<img src="./images/fox.jpg" />
+			<p class="subtitle">A fox.</p>
+			</div>
+			<div class="images">
+			<img src="./images/giraffe.jpg" />
+			<p class="subtitle">A giraffe.</p>
+			</div>
+			</div>
+			<figure class="thor-quote">
 				<blockquote>This is an inspiring quote or testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</blockquote>
 				<figcaption>--Thor, God of Thunder</figcaption>
 			</figure>
 			<div class="call-to-action">
 				<h2>Call to action! It's time!</h2>
 				<p>Sign up for our prduct by clicking that button right over there!</p>
-				<button class="sign-up" type="submit"></button>
+				<button class="sign-up" type="submit">Sign up</button>
 			</div>
 		</main>
 		<footer>
