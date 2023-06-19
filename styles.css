@@ -8,6 +8,8 @@
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -25,13 +27,26 @@ header {
 	flex-flow: wrap;
 }
 
+.header-logo {
+	margin-top: -1%;
+	margin-left: -50%;
+	color: white;
+}
+
 .left {
 	display: flex;
 	flex-direction: column;
 	flex-flow: wrap;
 	width: 50%;
-	max-width: 300px;
-	margin: 0 10%;
+	max-width: 450px;
+}
+
+.subtitle {
+	margin-left: 4%;
+}
+
+.cat-pic {
+	max-width: 20rem;
 }
 
 .right {
@@ -40,16 +55,12 @@ header {
 	flex-flow: wrap;
 }
 
-.card-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
 
-.card {
-	background-color: gray;
-	width: 300px;
-	height: 200px;
+.cat-pic-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .gray-text {
@@ -60,6 +71,7 @@ h1 {
 	color: var(--white-text);
 	font-weight: 700;
 	font-size: 3rem;
+	margin-left: 3%;
 }
 
 h2 {
@@ -74,15 +86,13 @@ h2 {
 
 a {
 	text-decoration: none;
-}
-
-.header-logo {
 	color: white;
 }
 
 nav.navbar {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
 }
  button {
  	background: var(--button-color);
@@ -90,6 +100,7 @@ nav.navbar {
  	min-height:2.5rem;
  	min-width: 8rem;
  	border-radius: 5%;
+	margin: 2% 4%;
  }
 
  .thor-quote {
@@ -132,7 +143,10 @@ nav.navbar {
  	background: var(--dark-background);
  	height: 10vh;
  	color: var(--white-text);
- 	text-align: center;
+ 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
  }
 
  .call-to-action {
@@ -150,7 +164,6 @@ nav.navbar {
  }
 
  .sign-up-paragraph {
-	margin-top: -3%;
 	margin-left: 23%;
 	
  }
